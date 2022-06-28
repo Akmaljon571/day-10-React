@@ -1,6 +1,6 @@
 import { Button, Form, Input, message, notification } from "antd";
 import { SmileOutlined } from "@ant-design/icons";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import useStart from "./hooks/useStart";
 import "antd/dist/antd.css";
 
