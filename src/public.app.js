@@ -57,7 +57,7 @@ function Public() {
     })
     .then((res) => res.json())
     .then((malumot) => setToken(malumot));
-  }, [start]);
+  });
 
   const onFinishFailed = (errorInfo) => {
     console.log("Failed:", errorInfo);
