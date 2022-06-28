@@ -8,7 +8,7 @@ function Public() {
   const key = "updatable";
   const { start, setStart, token, setToken } = useStart();
   const onFinish = (values) => {
-    if (token !== '' && values.password == 12345678) {
+    if (token !== '' && (values.password - 0) === 12345678) {
       let pros = {
         start: true,
         token: token.token,
@@ -55,8 +55,8 @@ function Public() {
         "Content-type": "application/json; charset=UTF-8",
       },
     })
-      .then((response) => response.json())
-      .then((json) => setToken(json));
+    .then((res) => res.json())
+    .then((malumot) => setToken(malumot));
   }, [start]);
 
   const onFinishFailed = (errorInfo) => {
