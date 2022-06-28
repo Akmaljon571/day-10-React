@@ -23,3 +23,45 @@ body {
       monospace;
   }
 
+
+  .miniContainer{
+    width: 500px;
+    margin: 0 auto;
+    background-color: rgba(221, 202, 202, 0.416);
+    padding-right: 100px;
+    height: 300px;
+    border-radius: 20px;
+    position: relative;
+    padding-top: 100px;
+  }
+
+  .SingIn {
+    height: 80px;
+    background-color: rgba(15, 242, 15, 0.463);
+    width: 100%;
+    display: block;
+    position: absolute;
+    margin-top: -100px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    text-align: center;
+  }
+
+  .ant-btn-primary{
+    margin-left: 80px;
+  }
+
+  #root{
+    height: 100%;
+  }
+
+  .BgImage{
+    background-image: url(./image/eco-desktop-bg-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }

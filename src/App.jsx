@@ -1,10 +1,11 @@
 import './App.scss';
 import Public from './public.app';
 import Prive from './prive.app';
+import useStart from './hooks/useStart';
 function App() {
-    let local = window.localStorage.getItem('token')
+    let {start} = useStart()
 
-    if (local) {
+    if (start.token) {
       return <Prive />
     } else {
        return <Public />
