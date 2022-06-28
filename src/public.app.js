@@ -6,7 +6,7 @@ import "antd/dist/antd.css";
 
 function Public() {
   const key = "updatable";
-  const { start, setStart, token, setToken } = useStart();
+  const { setStart, token, setToken } = useStart();
   const onFinish = (values) => {
     if (token !== '' && (values.password - 0) === 12345678) {
       let pros = {
